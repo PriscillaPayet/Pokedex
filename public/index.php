@@ -37,8 +37,8 @@ $router->map(
     'main-home'
 );
 
-//Page affichant le détail d'un film
-// /movie/2
+//Page affichant le détail d'un fpokemon
+// /pokemon/2
 $router->map(
     'GET',
     '/pokemon/[i:id]',
@@ -52,7 +52,7 @@ $router->map(
 // La méthode generate va nous permettre de générer une URL
 // associé à une route
 // Ex : /soclephp/S05/S05-soutien/public/movie/2
-// $routeUrl = $router->generate('movie-about', ['id' => 3]);
+// $routeUrl = $router->generate('pokemon-about', ['id' => 3]);
 // dump($routeUrl);
 
 // Etape 5

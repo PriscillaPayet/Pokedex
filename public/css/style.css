@@ -1,0 +1,36 @@
+body {
+    background: #c14040;
+    color: #FFF;
+    font-family: 'Bree Serif', serif;
+    padding: 0;
+    margin: 0;
+   
+}
+
+body ul{
+    list-style: none;
+   
+}
+
+.headerNav{
+    background-color: #efe3e3;
+    color: #c14040;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.headerNav ul{
+    display: flex;
+    padding-right: 15px;
+   
+}
+.headerNav h1{
+    font-size: 1.5em;
+    padding-left: 15px;
+}
+.headerNav ul li{
+    padding-left: 10px
+}

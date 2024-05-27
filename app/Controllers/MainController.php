@@ -24,8 +24,8 @@ class MainController extends CoreController
 
 
         // On appelle la vue views/home.tpl.php
-        // je vais pouvoir récupérer les films grâce
-        // $viewData['movieList']
+        // je vais pouvoir récupérer les pokemons grâce
+        // $viewData['pokemonList']
         $this->show('home', [
             'pokemonList' => $pokemonList
         ]);

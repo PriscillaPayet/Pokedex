@@ -1,1 +1,3 @@
-<h1><?= $viewData['pokemon']->getName() ?></h1>
+
+
+<h1>Détail <?= $viewData['pokemon']->getName() ?></h1>
