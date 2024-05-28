@@ -94,6 +94,10 @@ a{
     margin: 5px;
     border-radius: 5px;
 }
+
+.types li a{
+    color: #efe3e3;
+}
 .stat{
     display: grid;
     grid-template-columns: 2fr 1fr 3fr;
