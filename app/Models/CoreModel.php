@@ -1,23 +1,29 @@
 <?php
 
-/**
- * Classe parente qui va stocker tous les éléments communs à tous les modèles
- * C'est classe mère dont vont hériter TOUS les models
- * Cette classe n'est pas destinée à être instanciée, à créer des objets, mais seulement à être héritée/étendue
- */
+namespace Pokedex\Models;
+
 class CoreModel
 {
-    // Ici, on évite de répéter les propriétés présentes dans tous les Models
-    // => on factorise dans la classe "parent" de tous les Models
-
-    // visibilité private : uniquement accessible dans la classe CoreModel
-    // visibilité protected : accesible par toute la "famille"
-    // ce qui signifie que les modèles Category et Product y auront aussi accès.
+    /** 
+     * Tous nos models ont les propriétés id et name en commun. On peut donc les extraire dans le model parent.
+     */
     protected $id;
+    protected $name;
+    
 
-    // Ici, on évite de répéter les méthodes présentes dans tous les Models
-    // => on factorise dans la classe "parent" de tous les Models (y'a de l'écho)
+    /**
+     * De même pour les getters (pas besoin de setters dans ce projet)
+     */
 
+    /**
+     * Get the value of the name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
     /**
      * Get the value of id
      */
@@ -25,4 +31,5 @@ class CoreModel
     {
         return $this->id;
     }
+
 }

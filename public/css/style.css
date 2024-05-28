@@ -3,7 +3,8 @@ body {
     color: #FFF;
     font-family: 'Bree Serif', serif;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    width: 98%;
    
 }
 
@@ -12,25 +13,130 @@ body ul{
    
 }
 
-.headerNav{
+a{
+    text-decoration: none;
+}
+
+.header-container{
     background-color: #efe3e3;
-    color: #c14040;
     margin: 10px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
 
 }
-.headerNav ul{
+.header-container ul, .header-container a{
     display: flex;
     padding-right: 15px;
+    color: #c14040;
+    padding-left: 10px
    
 }
-.headerNav h1{
+.logo{
     font-size: 1.5em;
     padding-left: 15px;
 }
-.headerNav ul li{
-    padding-left: 10px
+
+.main_list{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.main_list li, .right_side{
+    background-color: #992727;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.main_list li{
+    width: 30%;
+}
+
+.main_list img{
+    width: 100%;
+}
+
+.main_list li a, .back{
+    text-align: center;
+    color: #efe3e3;
+}
+
+.main_pokemon h1{
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    margin: 20px;
+}
+
+.left_side, .right_side{
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.left_side, .back{
+    display: flex;
+    justify-content: center;
+}
+
+.types ul{
+    display: flex;
+
+}
+
+.types li{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.stat{
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5px;
+}
+
+.stat .stat_container{
+    border-radius: 5px;
+    overflow: hidden;
+    background: #632b2b;
+}
+
+
+.stat .bar_value{
+    height: 100%;
+    background: #FFF;
+}
+
+
+
+.types_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+  
+
+}
+
+.types_list li{
+    width: 23%;
+    margin: 5px;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 5px;
+   
+}
+
+.types_list a{
+    color: #efe3e3;
+}
+
+
+
